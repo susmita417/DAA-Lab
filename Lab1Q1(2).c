@@ -1,3 +1,4 @@
+//create a text.txt file before running this code in the same directory
 #include <stdio.h>
 #include <stdlib.h>
 
