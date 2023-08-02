@@ -17,7 +17,7 @@ int main()
         arr[i]=(rand() % (max-min+1))+min;
         printf("%d\t",arr[i]);
     }
-    if(n<2){
+    if(n<3){
         printf("not enough elements");
     }
     else{
