@@ -34,7 +34,7 @@ int main()
         i++;
     }
     fclose(file);
-    if (n < 2)
+    if (n < 3)
     {
         printf("Not enough elements");
     }
