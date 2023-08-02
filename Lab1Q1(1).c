@@ -17,16 +17,23 @@ int main()
         arr[i]=(rand() % (max-min+1))+min;
         printf("%d\t",arr[i]);
     }
-    for(int i=0;i<n;i++){
-        for(int j=0;j<n-i-1;j++){
-            if(arr[j]>arr[j+1]){
-                int temp=arr[j];
-                arr[j]=arr[j+1];
-                arr[j+1]=temp;
+    if(n<2){
+        printf("not enough elements");
+    }
+    else{
+        for(int i=0;i<n;i++){
+            for(int j=0;j<n-i-1;j++){
+                if(arr[j]>arr[j+1]){
+                    int temp=arr[j];
+                    arr[j]=arr[j+1];
+                    arr[j+1]=temp;
+                }
             }
         }
+        printf("\nSecond smallest: %d\n",arr[1]);
+        printf("Second largest: %d",arr[n-2]);
     }
-    printf("\nSecond smallest: %d\n",arr[1]);
-    printf("Second largest: %d",arr[n-2]);
+    
     return 0;
 }
+
